@@ -7,15 +7,19 @@
 
 <script>
 export default {
+    name: 'HomeLayout',
+    data(){
+        return {
+
+        }
+    },
     created() {
-        console.log(123123)
+        console.log(222)
     }
 }
 </script>
 
-<style>
-    .home {
-        background: url('/blue.jpeg') center no-repeat;
-        background-size: 100%;
-    }
+<style lang="less">
+    @import "../public/css/reset.less";
+    @import "./HomeLayout.less";
 </style>

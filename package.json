@@ -1,22 +1,30 @@
 {
-  "name": "sheep.blog",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jombo-k/sheep.blog.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jombo-k/sheep.blog/issues"
-  },
-  "homepage": "https://github.com/Jombo-k/sheep.blog#readme"
+    "name": "sheep.blog",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jombo-k/sheep.blog.git"
+    },
+    "devDependencies": {
+        "less": "^3.11.1",
+        "less-loader": "^5.0.0",
+        "vuepress": "^1.8.2"
+    },
+    "dependencies": {
+        "axios": "^0.19.2"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Jombo-k/sheep.blog/issues"
+    },
+    "homepage": "https://github.com/Jombo-k/sheep.blog#readme"
 }
