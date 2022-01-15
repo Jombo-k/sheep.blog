@@ -10,16 +10,13 @@
         </div>
         <div class="link-box">
             <div class="link-item">
-                <a href="/interview/blockchain/01">[区块链]</a>
+                <a href="/interview/blockchain/01">Blockchain</a>
             </div>
             <div class="link-item">
-                <a href="/interview/blockchain/01">「后朋」</a>
+                <a href="/interview/blockchain/01">Javascript</a>
             </div>
             <div class="link-item">
-                <a href="/interview/blockchain/01">「后摇」</a>
-            </div>
-            <div class="link-item">
-                <!-- <a href="/interview/blockchain/01">「后朋」</a> -->
+                <a href="http://music.163.com/playlist?id=972966771&userid=332295694">Music</a>
             </div>
         </div>
     </div>
