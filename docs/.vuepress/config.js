@@ -1,12 +1,11 @@
 module.exports = {
-    title: 'sheep',
-    description: '网站描述',
-    // 注入到当前页面的 HTML <head> 中的标签
-    head: [
-        ['link', {
+    title: '北五环蝎子莱莱',
+    description: 'Be water, my friends',
+    head: [// 注入到当前页面的 HTML <head> 中的标签
+        ['link', {// 增加一个自定义的 favicon(网页标签的图标)
             rel: 'icon',
             href: '/favicon.ico'
-        }], // 增加一个自定义的 favicon(网页标签的图标)
+        }], 
     ],
     base: '/', // 部署到github
     markdown: {
@@ -16,43 +15,45 @@ module.exports = {
         logo: '/blue.jpeg',
         sidebarDepth: 2, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
         lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
-        nav:[
-            { text: '11111', link: '/algorithm/' }, // 内部链接 以docs为根目录
-            { text: '2222', link: 'http://obkoro1.com/' }, // 外部链接
+        nav: [{
+                text: '11111',
+                link: '/algorithm/'
+            }, // 内部链接 以docs为根目录
+            {
+                text: '2222',
+                link: 'http://obkoro1.com/'
+            }, // 外部链接
             // 下拉列表
-            { text: '3333', items: [
-                    { text: 'GitHub地址', link: 'https://github.com/OBKoro1' },
+            {
+                text: '3333',
+                items: [{
+                        text: 'GitHub地址',
+                        link: 'https://github.com/OBKoro1'
+                    },
                     {
                         text: '12312312',
                         link: 'https://github.com/OBKoro1/Brush_algorithm'
                     }
                 ]
-            }        
+            }
         ],
-        sidebar:{
-          // docs文件夹下面的accumulate文件夹 文档中md文件 书写的位置(命名随意)
-          '/accumulate/': [
-              '/accumulate/', // accumulate文件夹的README.md 不是下拉框形式
-              {
-                title: '侧边栏下拉框的标题1',
-                children: [
-                  '/accumulate/JS/test', // 以docs为根目录来查找文件 
-                  // 上面地址查找的是：docs>accumulate>JS>test.md 文件
-                  // 自动加.md 每个子选项的标题 是该md文件中的第一个h1/h2/h3标题
-                ]
-              }
+        sidebar: {
+            '/interview/': [
+                {
+                    title: "Blockchain",
+                    collapsable: true,
+                    children: [
+                        ['/interview/blockchain/01', '人类社会货币的演变'],
+                        ['/interview/blockchain/02', '比特币的转账机制和7个必修名词'],
+                        ['/interview/blockchain/03', '比特币转账运行原理'],
+                        ['/interview/blockchain/04', '比特币技术来源'],
+                        ['/interview/blockchain/05', '比特币价格'],
+                        ['/interview/blockchain/06', '比特币上游-挖矿'],
+                        ['/interview/blockchain/07', '比特币中游-交易'],
+                        ['/interview/blockchain/08', '比特币中游-存储'],
+                    ]
+                },
             ],
-            // docs文件夹下面的algorithm文件夹 这是第二组侧边栏 跟第一组侧边栏没关系
-            '/algorithm/': [
-              '/algorithm/', 
-              {
-                title: '第二组侧边栏下拉框的标题1',
-                children: [
-                  '/algorithm/simple/test' 
-                ]
-              }
-            ]
         }
-  
     }
 };
