@@ -1,7 +1,10 @@
 <template>
     <div class="home">
-        <h1>sheep</h1>
-        <a href="/">链接</a>
+        <div class="avatar-box">
+            <a href="javascript:;" title="头像">
+                
+            </a>
+        </div>
     </div>
 </template>
 
