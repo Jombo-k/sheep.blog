@@ -1,13 +1,25 @@
 <template>
     <div class="home">
         <div class="avatar-box">
-            <a href="javascript:;" title="头像">
-
-            </a>
+            <div class="avatar-img">
+                <a href="javascript:;" title="头像"></a>
+            </div>
+            <div class="avatar-name">
+                <a href="https://github.com/Jombo-k/Jombo-k.github.io">Jombo-k</a>
+            </div>
         </div>
         <div class="link-box">
             <div class="link-item">
-                <a href="/interview/blockchain/01">区块链</a>
+                <a href="/interview/blockchain/01">[区块链]</a>
+            </div>
+            <div class="link-item">
+                <a href="/interview/blockchain/01">「后朋」</a>
+            </div>
+            <div class="link-item">
+                <a href="/interview/blockchain/01">「后摇」</a>
+            </div>
+            <div class="link-item">
+                <!-- <a href="/interview/blockchain/01">「后朋」</a> -->
             </div>
         </div>
     </div>
